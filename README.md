@@ -16,8 +16,18 @@ A web application built with Next JS 13, where a user can enter his/her sales an
 
 > With no entries
 
-![](entries-empty.jpg)
+![](entriesPage.jpg)
 
 > With entries
 
-![](entries.jpg)
+![](entriesPage1.jpg)
+
+**Overview Section**
+
+> With All Data
+
+![](overview.jpg)
+
+> After Deleting Amman's Data
+
+![](overview1.jpg)
