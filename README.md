@@ -12,15 +12,21 @@ A web application built with Next JS 13, where a user can enter his/her sales an
 
 ![](homePage.jpg)
 
+![](h-dark.jpg)
+
 **Entries Page**
 
 > With no entries
 
 ![](entriesPage.jpg)
 
+![](e.jpg)
+
 > With entries
 
 ![](entriesPage1.jpg)
+
+![](ew.jpg)
 
 **Overview Section**
 
@@ -28,6 +34,20 @@ A web application built with Next JS 13, where a user can enter his/her sales an
 
 ![](overview.jpg)
 
+![](td.jpg)
+
 > After Deleting Amman's Data
 
 ![](overview1.jpg)
+
+![](tdd.jpg)
+
+**Local Storage**
+
+> Dark mode false
+
+![](ls-false.PNG)
+
+> Dark mode true
+
+![](ls-true.PNG)

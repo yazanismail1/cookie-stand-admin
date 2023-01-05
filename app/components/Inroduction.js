@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Introduction() {
   return (
-      <section id="intoduction" className="px-40 flex space-x-8 items-center">
-        <Image src="/assets/sales.jpg" width={500} height={500} />
+      <section id="intoduction" className="dark:text-slate-200 px-40 lg:flex pt-5 gap-8 md:items-center md:block md:text-center sm:text-center dark:bg-slate-700 ">
+        {/* <Image className="md:flex md:justify-center" src="/assets/sales.jpg" width={500} height={500} /> */}
         <div>
-          <h1 className=" font-bold text-3xl">Track Your Sales</h1>
+          <h1 className=" font-bold text-3xl ">Track Your Sales</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -18,7 +18,7 @@ export default function Introduction() {
           </p>
           <Link
             type="button"
-            className="rounded font-medium text-black bg-orange-300 px-3 py-2 hover:bg-orange-100 mt-5"
+            className="rounded font-medium text-black dark:text-slate-200 dark:bg-slate-900 bg-orange-300 mb-4 px-3 py-2 hover:bg-orange-100 mt-5"
             href="/entries"
           >
             Get Started

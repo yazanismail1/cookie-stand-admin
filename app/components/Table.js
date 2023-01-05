@@ -53,9 +53,9 @@ export default function Table(props) {
   },[allSales, reload]);
 
   return (
-    <div class="relative overflow-x-auto m-20">
-      <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 rounded-xl">
-        <thead class="text-xs text-gray-700 uppercase bg-orange-300 dark:bg-gray-700 dark:text-gray-400 rounded-xl">
+    <div class="relative overflow-x-auto p-20  dark:bg-slate-700">
+      <table class="w-full text-sm text-left text-gray-500 dark:text-slate-200 rounded-xl">
+        <thead class="text-xs text-gray-700 uppercase bg-orange-300 dark:bg-slate-900 dark:text-slate-200 rounded-xl border-b">
           <tr>
             <th scope="col" class="px-3 py-3 rounded-tl-xl">
               Location
@@ -113,10 +113,10 @@ export default function Table(props) {
         <tbody>
           {data.map((item) => {
             return (
-              <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+              <tr class="bg-white border-b dark:bg-slate-900 dark:border-gray-700">
                 <th
                   scope="row"
-                  class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  class="px-3 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-slate-200"
                 >
                   {item.location}
                 </th>
@@ -161,10 +161,10 @@ export default function Table(props) {
               </tr>
             );
           })}
-          <tr class="bg-orange-100 font-semibold border-b text-black dark:bg-gray-900 dark:border-gray-700 ">
+          <tr class="bg-orange-100 font-semibold border-b dark:text-slate-200 text-black dark:bg-slate-900 dark:border-gray-700 ">
             <th
               scope="row"
-              class="px-3 py-4 font-semibold text-gray-900 whitespace-nowrap dark:text-white"
+              class="px-3 py-4 font-semibold text-gray-900 dark:text-slate-200 whitespace-nowrap"
             >
               TOTAL
             </th>
