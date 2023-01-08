@@ -3,11 +3,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { useContext } from "react";
 import { ThemeContext } from "../contexts/theme";
+import { AuthContext } from '../contexts/auth';
 
 export default function Header(props) {
   const { isDarkTheme, toggleThemeHandler } = useContext(ThemeContext);
+  const {tokens} = useContext(AuthContext);
+
   return (
-    <header>
+    (tokens?<header>
       <nav className="flex w-full flex-wrap h-18 py-3 z-10  items-center justify-between px-12 bg-transparent font-medium border-b-2 text-black dark:text-white">
         <div className="absolute w-full h-full left-0 top-0 dark:bg-slate-900 bg-orange-100 -z-10 backdrop-blur-sm"></div>
         <ul className="inline-flex space-x-6">
@@ -53,6 +56,6 @@ export default function Header(props) {
           </button>
         </div>
       </nav>
-    </header>
+    </header>:<></>)
   );
 }

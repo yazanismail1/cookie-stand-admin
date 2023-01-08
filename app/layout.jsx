@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ThemeWrapper from "./contexts/theme";
+import { AuthWrapper } from "./contexts/auth";
 
 const user_name = prompt("What is your name?");
 
@@ -22,13 +23,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head />
-      <ThemeWrapper>
-        <body>
-          <Header name={userName} />
-          <main className="bg-white">{children}</main>
-          <Footer date={year} />
-        </body>
-      </ThemeWrapper>
+      <AuthWrapper>
+        <ThemeWrapper>
+          <body>
+            <Header name={userName} />
+            <main className="bg-white">{children}</main>
+            <Footer date={year} />
+          </body>
+        </ThemeWrapper>
+      </AuthWrapper>
     </html>
   );
 }
